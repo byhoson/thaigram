@@ -6,68 +6,117 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Explore | Thaigram</title>
 </head>
 
 <body>
     <!-- Header -->
-    <header>
-        <div>
-            <i class="fa fa-instagram" aria-hidden="true"></i>
-            <a href="index.html"><img src="images/logo.png" /></a>
-        </div>       
-        <input type="search" placeholder="🔎  search"/>
-        <ul>
-            <li><a href="explore.html"><i class="fa fa-compass" aria-hidden="true"></i></a></li>
-            <li><a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a></li>
-            <li><a href="profile.html"><i class="fa fa-user-o" aria-hidden="true"></i></a></li>
-        </ul>
+    <header class="header">
+        <div class="header__wrapper">
+            <div class="header__logo">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+                <a href="feed.html">
+                    <img src="images/logo.png" />
+                </a>
+            </div>
+            <input type="search" placeholder="🔎  search" />
+            <ul class="header__icons">
+                <li class="header__icon">
+                    <a href="explore.html">
+                        <i class="fa fa-compass" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li class="header__icon">
+                    <a href="#">
+                        <i class="fa fa-heart-o" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li class="header__icon">
+                    <a href="profile.html">
+                        <i class="fa fa-user-o" aria-hidden="true"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
     </header>
 
-    <main>
-        This is Explore Page
+    <main class="explore">
+        <span>Suggested</span>
+        <ul class="explore__users">
+            <li class="explore__user">
+                <img src="images/spotv.jpg">
+                <div>
+                    <span class="explore__username">spotvsports</span>
+                    <span class="explore__fullname">spotv</span>
+                </div>
+                <div>
+                    <button>Follow</button>
+                </div>
+            </li>
+            <li class="explore__user">
+                <img src="images/sbs.jpg">
+                <div>
+                    <span class="explore__username">sbsnews</span>
+                    <span class="explore__fullname">sbs뉴스</span>
+                </div>
+                <div>
+                    <button>Follow</button>
+                </div>
+            </li>
+            <li class="explore__user">
+                <img src="images/jtbc.jpg">
+                <div>
+                    <span class="explore__username">jtbcnews</span>
+                    <span class="explore__fullname">JTBCNEWS</span>
+                </div>
+                <div>
+                    <button>Follow</button>
+                </div>
+            </li>
+        </ul>
     </main>
     <!-- Footer -->
-    <footer>
+    <footer class="footer">
         <!-- Navigation -->
-        <nav>
+        <nav class="footer__nav">
             <!-- List of links -->
-            <ul>
+            <ul class="footer__list">
                 <li>
-                    <a href="#">About us</a>
+                    <a href="#" class="footer__list-item">About us</a>
                 </li>
                 <li>
-                    <a href="#">Support</a>
+                    <a href="#" class="footer__list-item">Support</a>
                 </li>
                 <li>
-                    <a href="#">Blog</a>
+                    <a href="#" class="footer__list-item">Blog</a>
                 </li>
                 <li>
-                    <a href="#">Press</a>
+                    <a href="#" class="footer__list-item">Press</a>
                 </li>
                 <li>
-                    <a href="#">API</a>
+                    <a href="#" class="footer__list-item">API</a>
                 </li>
                 <li>
-                    <a href="#">Jobs</a>
+                    <a href="#" class="footer__list-item">Jobs</a>
                 </li>
                 <li>
-                    <a href="#">Privacy</a>
+                    <a href="#" class="footer__list-item">Privacy</a>
                 </li>
                 <li>
-                    <a href="#">Terms</a>
+                    <a href="#" class="footer__list-item">Terms</a>
                 </li>
                 <li>
-                    <a href="#">Directory</a>
+                    <a href="#" class="footer__list-item">Directory</a>
                 </li>
                 <li>
-                    <a href="#">Language</a>
+                    <a href="#" class="footer__list-item">Language</a>
                 </li>
             </ul>
         </nav>
-        <span>© 2018 Thaigram</span>
+        <span class="footer__span">© 2018 Thaigram</span>
     </footer>
-    
+
 </body>
 
 </html>
