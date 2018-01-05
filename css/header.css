@@ -5,6 +5,7 @@
   background-color: white;
   padding: 20px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
 }
 
 .header .header__wrapper {
@@ -23,4 +24,21 @@
 
 .header__icons .header__icon {
   margin-left: 20px;
+}
+
+.header .header__input {
+  background-color: #fafafa;
+  border: 0;
+  height: 30px;
+  width: 220px;
+  border: 1px solid rgba(0, 0, 0, 0.0975);
+  border-radius: 3px;
+  padding-left: 10px;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.header .header__input:focus {
+  outline: none;
+  background-color: white;
 }

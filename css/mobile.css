@@ -1,0 +1,16 @@
+@media screen and (min-width: 300px) and (max-width: 736px) {
+  main,
+  .explore {
+    width: 100%;
+  }
+
+  .footer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .footer__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

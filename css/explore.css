@@ -1,0 +1,73 @@
+.explore {
+  width: 50%;
+  background-color: white;
+}
+
+.explore__users {
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+}
+
+.explore__user {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border-bottom: 1px solid #dbdbdb;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 3px;
+}
+
+.explore__user:last-child {
+  border: 0px;
+}
+
+.explore__username,
+.explore__fullname {
+  display: block;
+}
+
+.explore__usercol {
+  display: flex;
+}
+
+.explore__usercol img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.explore__userinfo {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  justify-content: center;
+}
+
+.explore__suggested {
+  display: block;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  background-color: #fafafa;
+}
+
+.explore__fullname {
+  color: #999999;
+}
+
+button {
+  cursor: pointer;
+  background-color: #1890f8;
+  padding: 5px 10px;
+  border-radius: 3px;
+  color: white;
+}
+
+button:active {
+  opacity: 0.9;
+  outline: none;
+}
+
+button:focus {
+  outline: none;
+}

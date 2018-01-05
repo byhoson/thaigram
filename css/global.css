@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+html {
+  background-color: #fafafa;
+}
+
 body {
   display: flex;
   flex-direction: column;

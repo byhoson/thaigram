@@ -1,0 +1,122 @@
+.login {
+  padding-top: 60px;
+  display: flex;
+  max-width: 900px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.login .login__column {
+  background-color: #fafafa;
+  width: 45%;
+  text-align: center;
+}
+
+.login__column > img {
+  width: 100%;
+  height: 100%;
+}
+
+.login__column .login__white-box {
+  background-color: white;
+  border: 1px solid #dbdbdb;
+  padding: 30px;
+}
+
+.login__column .login__box {
+  padding: 30px;
+}
+
+.login__white-box .login__input {
+  display: block;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.login__input[type="submit"] {
+  background-color: #3e99ed;
+  border: 0;
+  color: white;
+  padding: 5px;
+  font-weight: 600;
+  font-size: 14px;
+  border-radius: 3px;
+}
+
+.login__input[type="submit"]:active {
+  opacity: 0.8;
+}
+
+.login__input[type="submit"]:active,
+.login__input[type="submit"]:focus {
+  outline: none;
+}
+
+.login__input {
+  padding: 10px;
+  border: 0;
+  border: 1px solid #efefef;
+  border-radius: 3px;
+  background: #fafafa;
+  font-size: 14px;
+}
+
+.login__input:focus {
+  border-color: rgba(0, 0, 0, 0.0975);
+  outline: none;
+}
+
+.login__white-box .login__forgot {
+  color: black;
+  font-size: 6px;
+}
+
+.login__white-box > span {
+  display: block;
+  width: 100%;
+  margin-top: 5px;
+}
+
+.login__white-box > a {
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  color: #4060b8;
+}
+
+.login__column .login__white-box:nth-child(2) {
+  margin-top: 10px;
+}
+
+.login__column .login__white-box:nth-child(2) span {
+  display: inline;
+  margin-top: 0px;
+}
+
+.login__column .login__white-box:nth-child(2) a {
+  display: inline;
+  margin-top: 0px;
+  color: #2496f8;
+}
+
+.login__logo {
+  margin-bottom: 20px;
+}
+
+.login__box .login__appstores {
+  display: flex;
+  justify-content: center;
+}
+
+.login__box > span {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.login__appstore img {
+  height: 50px;
+}
+
+.login__box {
+  background-color: #fafafa;
+}

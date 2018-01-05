@@ -1,0 +1,107 @@
+article {
+  border: 1px solid #dbdbdb;
+  margin-bottom: 60px;
+}
+
+.photo__header {
+  background-color: white;
+  display: flex;
+  padding: 10px;
+}
+
+.photo__header img {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  margin-right: 10px;
+}
+
+.photo__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.photo__actions {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 15px;
+}
+
+.photo__likes {
+  display: block;
+  padding-bottom: 15px;
+}
+
+.photo__feedback {
+  background-color: white;
+  padding: 15px;
+  padding-bottom: 0px;
+}
+
+.photo__owner,
+.photo__place {
+  display: block;
+}
+
+.photo > img {
+  height: 600px;
+  width: 100%;
+}
+
+main {
+  width: 50%;
+}
+
+.photo__comment {
+  padding-bottom: 15px;
+}
+
+.photo__comment-author {
+  font-weight: 600;
+}
+
+.photo__timestamp {
+  display: block;
+  padding-bottom: 15px;
+  color: #999999;
+  font-size: 5px;
+}
+
+textarea {
+  width: 96%;
+  border: 0px;
+  padding-top: 20px;
+  font-size: 16px;
+  resize: none;
+}
+
+textarea:focus {
+  outline: none;
+}
+
+.photo__make-comment {
+  border-top: 1px solid #999999;
+  display: flex;
+  align-items: center;
+}
+
+.photo__make-comment i {
+  font-size: 20px;
+}
+
+.fa-heart-o {
+  margin-right: 10px;
+}
+
+@keyframes flipIt {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+.photo__avatar {
+  animation: flipIt 0.5s linear infinite;
+}
