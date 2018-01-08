@@ -1,0 +1,53 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% include "partials/head.html" %}
+    <title>Log In | Thaigram</title>
+</head>
+
+<body>
+    <!-- This are the COLUMNS -->
+    <main class="login">
+        <!-- Phone image -->
+        <div class="login__column">
+            <img src="{% static 'images/phoneImage.png' %}" />
+        </div>
+        <!-- Boxes  -->
+        <div class="login__column">
+            <div class="login__white-box">
+                <img src="{%static 'images/logo.png' %}" class="login__logo" />
+                <form action="feed.html" method="get" class="login__form">
+                    <input class="login__input" name="username" type="text" accept="" placeholder="Username" required />
+                    <input class="login__input" name="password" type="password" placeholder="Password" required />
+                    <input class="login__input" type="submit" value="Log In" />
+                </form>
+                <span>or</span>
+                <a href="#" class="login__link">
+                    <i class="fa fa-facebook-square" aria-hidden="true"></i> Log in with Facebook</a>
+                <a href="#" class="login__link login__small-link">Forgot password?</a>
+            </div>
+            <div class="login__white-box">
+                <span>Don't have an account?</span>
+                <a href="#">Sign up</a>
+            </div>
+            <div class="login__box">
+                <span>Get the app.</span>
+                <div class="login__app-stores">
+                    <a class="login__app-store" target="_blank " href="https://itunes.apple.com/app/instagram/id389801252 ">
+                        <img src="{% static 'images/ios.png' %}">
+                    </a>
+                    <a class="login__app-store" target="_blank " href="https://play.google.com/store/apps/details?id=com.instagram.android&referrer=utm_source%3Dinstagramweb%26utm_campaign%3DloginPage%26utm_medium%3Dbadge ">
+                        <img src="{% static 'images/android.png' %}">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Footer -->
+    {% include "partials/footer.html" %}
+
+</body>
+
+</html>

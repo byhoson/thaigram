@@ -1,0 +1,26 @@
+{% extends "base.html" %}{% load static %} {%block potato%}Explore{%endblock%} {% block content %}
+
+<main class="explore">
+    <span class="explore__suggested">Suggested</span>
+    <ul class="explore__users">
+        {% for user in all_users %}
+        <li class="explore__user">
+
+            <div class="explore__usercol">
+                <img src="images/spotv.jpg">
+                <div class="explore__userinfo">
+                    <span class="explore__username">{{user.username}}</span>
+                    <span class="explore__fullname">{{user.email}}</span>
+                </div>
+
+
+            </div>
+            <div>
+                <button>Follow</button>
+            </div>
+        </li>
+        {% endfor %}
+    </ul>
+</main>
+
+{% endblock %}

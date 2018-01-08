@@ -10,8 +10,17 @@ class Image(models.Model):
     updated_at = models.DateTimeField(auto_now=True)
     author = models.ForeignKey(User, on_delete=models.CASCADE, null=True)
 
+    def count_likes(self):
+        return self.like_set.all().count()
+
+    def count_comments(self):
+        return self.comment_set.all().count()
+
     def __str__(self):
         return f'{self.caption} - {self.location}'
+
+    class Meta:
+        ordering = ("-created_at",)
 
 
 class Comment(models.Model):
@@ -23,6 +32,9 @@ class Comment(models.Model):
     def __str__(self):
         return f'{self.message} - {self.directed_to.location}'
 
+    class Meta:
+        ordering = ("-id",)
+
 
 class Like(models.Model):
 
@@ -31,3 +43,6 @@ class Like(models.Model):
 
     def __str__(self):
         return f'{self.created_by}'
+
+    class Meta:
+        ordering = ("-id",)

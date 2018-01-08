@@ -1,0 +1,48 @@
+{% extends "base.html" %} {% load static %} {%block potato%}Feed{%endblock%} {% block content %}
+
+<main class="feed">
+    <section class="photos">
+        {% for image in all_images %}
+        <article class="photo">
+            <header class="photo__header">
+                <img src="{% static 'images/avatar.jpg' %}" class="photo__avatar" />
+                <div class="photo__info">
+                    <span class="photo__owner">{{image.author}}</span>
+                    <span class="photo__place">{{image.location}}</span>
+                </div>
+            </header>
+            <img src="/media/{{image.file}}" class="photo__file" />
+            <div class="photo__feedback">
+                <div class="photo__actions">
+                    <div class="photo__action-column">
+                        <i class="fa fa-heart-o fa-lg"></i>
+                        <i class="fa fa-comment-o fa-lg"></i>
+                    </div>
+                    <div class="photo__action-column">
+                        <i class="fa fa-bookmark-o fa-lg"></i>
+                    </div>
+                </div>
+                <span class="photo__likes">{{image.count_likes}} likes</span>
+                <ul class="photo__comments">
+                    {% for comment in image.comment_set.all %}
+                    <li class="photo__comment">
+                        <span class="photo__comment-author">
+                            {{ comment.created_by.username }}
+                        </span>
+                        {{ comment.message }}
+                    </li>
+                    {% endfor %}
+                </ul>
+                <span class="photo__timestamp">{{image.created_at}}</span>
+                <div class="photo__make-comment">
+                    <textarea placeholder="Add a comment.."></textarea>
+                    <i class="fa fa-ellipsis-h "></i>
+                </div>
+            </div>
+        </article>
+        {% endfor %}
+    </section>
+</main>
+
+
+{% endblock %}

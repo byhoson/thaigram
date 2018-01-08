@@ -1,0 +1,25 @@
+{% extends "base.html" %} {% load static %} {%block potato%}Profile{%endblock%} {% block content %}
+
+<main class="profile">
+    <div class="profile__username">
+        <span>{{user.username}}</span>
+    </div>
+
+    <div class="profile__images">
+
+        {% for image in my_images %}
+        <div class="profile__imageWrapper">
+            <img src="/media/{{image.file}}">
+            <div class="profile__imgInfo">
+                {{image.count_likes}} Likes {{image.count_comments}} Comments
+            </div>
+
+        </div>
+
+        {% endfor %}
+
+    </div>
+</main>
+
+
+{% endblock %}
